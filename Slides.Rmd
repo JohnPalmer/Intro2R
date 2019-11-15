@@ -1,17 +1,19 @@
 ---
-title: "Introduction to R for Statistical Analysis"
+title: "Introduction to R"
+subtitle: "For Statistical Analysis"
 author: "John Palmer"
 date: "November 15, 2019"
 output: 
   revealjs::revealjs_presentation:
-    theme: night
-    highlight: zenburn
+    theme: beige
+    highlight: pygments
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+# Introducing R
 
 ## What is R?
 
@@ -34,10 +36,64 @@ knitr::opts_chunk$set(echo = TRUE)
 - You can easily install R packages from CRAN as well from GitHub and other code repositories
 
 
-## Installing and Updating R
+## Installing R
 
 - You should already have it installed, but if not, go to https://cran.r-project.org/ and install the latest release that is compatible with your system
-- R is being continuously developed and new versions are regularly released
-- You do not need to upgrade every time there is a new version, but you will want to upgrade every so often in order to take advantage of new features or to ensure that you have a version that supports new packages
-- If you already have a lot of packages that you rely on, you may want to copy them into the new version to avoid having to download them again
-- It is also sometimes useful to have multiple versions of R installed side-by-side and this is possible
+
+## Upgrading R
+
+- You do not need to upgrade every time a new version is released, but you will want to upgrade every so often in order to take advantage of new features or to ensure support for new packages
+- If you already have numerous packages, you may want to copy them into the new version to avoid having to download them again
+- It is sometimes useful to have multiple versions of R installed side-by-side and this is possible
+
+# Working with R
+
+## Terminal
+
+- The Read-Eval-Print Loop is the most basic way of interacting with R directly
+- You can also run R files (non-interactively) from a terminal
+
+## Text Editor
+
+- You can use any text editor to create, store, and edit R scripts (like do-files)
+- It is nice to have features like code highlighting and a built-in REPL.
+- Choices include Emacs, vim, and sublime
+
+## IDE
+
+- An Integrated Development Environment combines a text editor with a set of  other useful tools for debugging, automation, and other tasks
+- The open source version of R Studio is the obvious choice here
+
+# R Basics
+
+## Basic Data Types
+
+- character: `r "a"`
+- numeric: `r 2` `r 2.4`
+- integer: `r 2L` 
+- logical: `r TRUE`
+- complex: `r 1+4i`
+
+## Assignment
+
+```{r, echo=TRUE, eval=TRUE}
+
+x <- 1
+y <- 2
+z <- x + y
+print(z)
+```
+
+## More Data Types
+
+- https://raw.githubusercontent.com/rstudio/cheatsheets/master/base-r.pdf
+
+## Key Concepts
+
+- Based and Packages
+- Object Oriented Programming
+- Naming things and understanding environments
+
+# Statistics with R
+
+
